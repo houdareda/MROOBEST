@@ -76,7 +76,7 @@ body {
 /* start hero */ 
 
 .hero{
-  background: url(../img/bg_hero.png);
+  background: url(../img/bg_hero.jpg);
   background-size: cover;
   background-position: right top;
 }
@@ -165,7 +165,7 @@ body {
 
 
 .result{
-  background: url(../img/bg_result.png);
+  background: url(../img/bg_result.jpg);
   background-size: cover;
   background-position: top left;
   text-align: center;
@@ -204,7 +204,7 @@ body {
 /* doctor */ 
 
 .doctor{
-  background: url(../img/bg_doctor.png);
+  background: url(../img/bg_doctor.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -220,7 +220,7 @@ body {
   width: 80%;
 }
 .doctor .top_sec_doctor{
-  background: url(../img/top_doctor.png);
+  background: url(../img/top_doctor.jpg);
   background-size: cover;
   background-position: center;
   border-top: 3px solid #fff;
@@ -228,7 +228,7 @@ body {
   padding: 10px 0;
 }
 .doctor .top_sec_doctor h3{
-  font-size: 6.1vw;
+  font-size: 6vw;
   line-height: 1.2;
   color: #fff;
 }
@@ -238,7 +238,7 @@ body {
   background: #fff;
   margin: 5px auto;
   padding: 0px 5px 2px;
-  font-size: 4.8vw;
+  font-size: 3.6vw;
 }
 .doctor ul{
   text-align: right;
@@ -282,7 +282,7 @@ body {
 
 /* start man */ 
 .man {
-  background: url(../img/bg_man.png);
+  background: url(../img/bg_man.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -338,7 +338,7 @@ body {
 /* last section */
 
 .last_sec {
-  background: url(../img/bg_form.png);
+  background: url(../img/bg_form.jpg);
   background-size: cover;
   background-position: top left;
   border-top: 7px solid #113543;
@@ -355,6 +355,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
 }
 .last_sec .div_form .text_price_img{
@@ -526,8 +527,116 @@ body {
   }
 
 
+  .hero .top_text{
+    margin-right: 10%;
+  }
+  .hero .top_text h1{
+    font-size: 42px;
+  }
+  .hero .top_text h2{
+    font-size: 35px;
+  }
+
+  .hero .top_text h3{
+    font-size: 35px;
+  }
+  .hero .top_text .img_product_hero{
+    width: 300px;
+  }
+
+  .hero ul li{
+    font-size: 25px;
+  }
+
+
+
+
+
+
+  .result h2{
+    font-size: 50px;
+  }
+  .result h4{
+    font-size: 30px;
+  }
+  .result .images{
+    width: 60%;
+  }
+
+
+
+  .doctor .top_sec_doctor h3{
+    font-size: 33px;
+  }
+  .doctor .top_sec_doctor p{
+    font-size: 20px;
+  }
+
+  .doctor ul{
+    text-align: center;
+  }
+  .doctor ul li{
+    width: max-content;
+    margin: auto;
+    font-size: 20px;
+  }
+  .doctor img{
+    width: 60%;
+  }
+
+
+
+
+
+
+  .man .top_man img{
+    width: 400px;
+  }
+
+.man .top_man p{
+  font-size: 34px;
+}
+
+
+.last_sec .delv_text p{
+  font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  .man .image_man .table{
+    width: 50%;
+  }
+  .man .image_man .man_img{
+    width: 40%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
   .last_sec .div_form .flex_price .img_productt{
     width: 250px;
+  }
+  .last_sec .div_form .text_price_img{
+    width: 600px;
   }
   .last_sec .div_form .flex_price{
     justify-content: space-between;
@@ -537,14 +646,18 @@ body {
     font-size: 20px;
   }
   .last_sec .div_form form{
-    width: 80%;
+    width: 70%;
   }
   .last_sec .sm-p{
-    font-size: 16px;
+    font-size: 15px;
   }
   .last_sec form .div-btn .btn{
     font-size: 25px;
 
+  }
+
+  .last_sec .delv_text::after, .last_sec .delv_text::before{
+    background: linear-gradient(to left , transparent ,transparent, #113543, #113543 , transparent,transparent);
   }
   .last_sec form .div-btn{
     width: 50%;
@@ -556,24 +669,77 @@ body {
     width: 80%;
   }
 
+  .last_sec .footer .boxs{
+    width: 80%;
+  }
+
+}
+
+@media (min-width:710px) {
+  .last_sec .div_form .text_price_img {
+    margin-right: 90px;
+    
+  }
+  .hero .top_text{
+    margin-right: 15%;
+  }
 }
 
 @media (min-width:1000px) {
 
+  .flex_pc_sec{
+    display: flex;
+  }
+  .flex_pc_sec2{
+    flex-direction: row-reverse;
+  }
+  .doctor ul h5{
+    font-size: 20px;
+  }
 
+.hero{
+  width: 50%;
+}
+
+.result{
+  width: 50%;
+}
   .div-btn .btn{
     font-size: 24px;
+  }
+  .hero .top_text{
+    margin-right: 5%;
+  }
+
+  .doctor{
+    width: 50%;
+  }
+  .man{
+    width: 50%;
   }
 
 
 
   .last_sec{
     width: 100%;
+
+  }
+  .last_sec .delv_text p{
+    font-size: 30px;
+  }
+
+  .last_sec .delv_text::after, .last_sec .delv_text::before{
+    background: linear-gradient(to left , transparent , #113543, #113543 , transparent);
+  }
+  .last_sec .delv_text::after{
+    display: none;
+  }
+  .last_sec .div_form .text_price_img{
+    padding-bottom: 0;
   }
 
   .last_sec .div_form{
     display: flex;
-    flex-direction: row-reverse;
     padding-right: 5%;
     justify-content: space-between;
     align-items: center;
@@ -587,9 +753,6 @@ body {
     width: max-content;
     padding-inline: 30px;
   }
-  .last_sec .div_form .flex_price{
-    width: 50%;
-  }
 
   .last_sec .sm-p{
     font-size: 1vw;
@@ -602,13 +765,37 @@ body {
   .last_sec .div_form .flex_price .img_productt{
     margin-top: 0;
   }
-  .last_sec{
-    padding-top: 20px;
-  }
 
   .last_sec .div_form form input{
     margin-bottom: 25px;
   }
+
+  .last_sec .div_form .text_price_img{
+    margin-right: 0;
+  }
+
+  .last_sec .div_form form{
+    width: 90%;
+  }
+
+  .last_sec .div_pc{
+    width: 50%;
+  }
+
+  .last_sec .div_form .text_price_img{
+    width: 500px;
+  }
+  .last_sec .div_form .flex_price .img_productt{
+    width: 200px;
+  }
+
+
+
+
+
+
+
+
 
   .footer{
     width: 100%;
@@ -631,8 +818,18 @@ body {
     height: 30px;
   }
 
+  .hero .top_text{
+    padding-bottom: 60px;
+  }
 }
-
+@media (min-width:1150px){
+  .hero .top_text{
+    margin-right: 10%;
+  }
+  .hero ul li{
+    font-size: 27px;
+  }
+}
 @media (min-width:1350px) {
 
   .last_sec .div_form form{
@@ -640,7 +837,21 @@ body {
   }
 
   .last_sec .div_form .flex_price .img_productt{
-    width: 280px;
+    width: 210px;
+    margin-left: 60px;
+  }
+  .hero .top_text{
+    margin-right: 15%;
+  }
+  .hero ul li{
+    font-size: 30px;
+  }
+  
+  .man .image_man .table{
+    width: 47%;
+  }
+  .man .image_man .man_img{
+    width: 37%;
   }
   
 }
